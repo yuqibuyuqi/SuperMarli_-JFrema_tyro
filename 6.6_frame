@@ -1,0 +1,37 @@
+package Jframe001;
+
+import javax.swing.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+public class Frame01 extends JFrame implements KeyListener {
+    public Frame01() {
+        this.setSize(800, 600);//大小
+        this.setLocationRelativeTo(null);//局🀄️
+        this.setVisible(true);//可见
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//自由关闭
+        this.setResizable(false);//窗口大小不可变
+        this.addKeyListener(this);//设置键盘监听器
+        this.setTitle("语气爱玩超级玛丽");
+
+    }
+
+    public static void main(String[] args) {
+        Frame01 frame01 = new Frame01();
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+
+    }
+}
