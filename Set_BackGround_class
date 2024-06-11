@@ -1,0 +1,43 @@
+package Jframe001;
+
+import java.awt.image.BufferedImage;
+
+public class BackGround01 {
+    private BufferedImage bgImage = null;//当前显示的图像
+    private int sort;//设置背景参数“第几个背景”
+    private boolean flag;//判断是不是最后一个场景
+
+
+    //空参构造
+    public BackGround01(){
+    }
+
+
+    public BackGround01(int sort, boolean flag) {
+        this.sort = sort;
+        this.flag = flag;
+
+        if(flag){
+            bgImage=StaticValue.bg2;
+
+        }else{
+            bgImage=StaticValue.bg;
+        }
+    }
+
+
+
+    //设置get方法
+    public BufferedImage getBgImage() {
+        return bgImage;
+    }
+
+    public int getSort() {
+        return sort;
+    }
+
+    public boolean isFlag() {
+        return flag;
+    }
+
+}
